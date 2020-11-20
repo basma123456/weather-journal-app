@@ -1,0 +1,72 @@
+body {
+
+    /*background-color:skyblue;*/
+    text-align: center;
+background-color: skyblue;
+}
+
+h2{
+
+font-weight: bolder;
+font-size: 55px;
+font-family: system-ui;
+text-shadow: 2px 2px 8px rgb(57, 57, 253);
+}
+
+
+input, textarea{
+    background-color: white;
+    padding:10px;
+    margin : 10px;
+    border-radius: 5px;
+}
+#country{
+    width:15%;
+    border : 3px solid rgb(86, 86, 138);
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px rgb(96, 96, 127);
+    padding:15px;
+    background-color: #f5eee2;
+border-color: white;;
+  }
+
+#myText{
+    width:15%;
+    border : 3px solid  rgb(86, 86, 138);
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px rgb(96, 96, 127);
+    padding:15px;
+    background-color: #f5eee2;
+    border-color: white;;
+
+  }
+
+
+
+#outer{
+    margin:80px;
+}
+
+
+#generate {
+    
+    background-image: linear-gradient(to right, #4b6cb7 0%, #182848  51%, #4b6cb7  100%);
+    color:white;
+    font-size:15px;
+    padding:12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+
+
+}
+#generate:active, #generate:focus{
+    outline:none;
+
+}
+
+#generate:hover {   
+cursor: pointer;
+}
