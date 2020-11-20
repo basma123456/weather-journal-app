@@ -1,14 +1,16 @@
 projectData = {};
 
-//////////////////////////////
+
+/*
 ////////////variables/////////////////
 const api = '&appid=5910e41b3aa42587c5509f3e28fd0332';
-//const zip = document.getElementById('country').value;
-const zip = "85005";
+var zip = document.getElementById('country').value;
+//let zip = "85005";
 const myUrl = 'https://api.openweathermap.org/data/2.5/weather?zip=';
-/////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////
 
+
+//////////////////////////////
+*/
 
 
 const express = require('express');
@@ -47,13 +49,6 @@ app.get('/' , function(req,res){
 
 
 
-
-app.get('/all' , (req,res)=>{
-
-   res.send(projectData);
-   const smsm = projectData.info;
-console.log(projectData);
-});
 ///post request
 
 app.post('/add' , (request,response)=>{
@@ -65,47 +60,35 @@ app.post('/add' , (request,response)=>{
 
 
 
+const info = [];
 
 
+///////////////then we make the get route which is after the post route
+app.get("/all" , (req,res)=>{
 
-///////////////////////////////////
-/*const api = '5910e41b3aa42587c5509f3e28fd0332';
-const zip = {};
 
-const myUrl = 'https://api.openweathermap.org/data/2.5/weather?zip=' + '85005' + '&appid={' + api + '}';
+    res.send(info);
+
+});
 
 //////////////////////////////////
 
+/*
+** this is the function that made after the post request in the app.js
 */
 
+app.post("/addCountry" , (req,res)=>{
 
-const info = [];
-
-app.post("/countryInfo" , (req,res)=>{
-
-    info.push(req.body);
-    console.log(info);
+         mag = {
+           temp: req.body.temp,
+            fav: req.body.fav,
+            ourDateNow : req.body.ourDateNow
+        }
+        
+    info.push(mag);//here
+    res.send(info);  
+    //console.log(info);
 
 });
-///////////////////////////////////////
-/*
-app.get("/countryInfo" , (req,res)=>{
-
-    res.send(body.info);
-    console.log(body.info);
-
-});*/
-
-///////////////////////////////
 
 
-/////////////////////////////////////////
-
-
-const bonData = []
-app.post('/bonbon' , (req,res)=>{
-
-    bonData.push(req.body);
-    console.log(bonData);
-
-})
