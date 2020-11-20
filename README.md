@@ -1,7 +1,7 @@
 weather-journal-app
 =======
 
-in that project we make an application which is enabling to put zip code of any country and also the user enter a statement of what he feel 
+In that project we make an application which is enabling to put zip code of any country and also the user enter a statement of what he feel 
 then the app will be connected to an web server api which has the data of the weather which is named openWeatherMap api,
 then the app will post that request and gets the data that is required which is the temprature from the api and also the statement that the user has entered
 
