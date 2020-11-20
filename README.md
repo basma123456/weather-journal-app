@@ -12,7 +12,7 @@ the app then will posted that request and gets the data that is required which i
 
   *  **getInfo** : is a function which has concept of asyenc method which enabling to use await method
   that me function has three parameters which is url , zip code , and my api that i obtained from the openWeatherMap api
-  ---------------
+ 
   * **postData** : 
       >  the function of post request which has 2 parameters
       >  the first is the url of the distination that we want to post in it
@@ -23,7 +23,7 @@ the app then will posted that request and gets the data that is required which i
 
   * **updateUi** : that function is enabling to show on the screen of the data that we post it and then get it
 
-
+ ============================
 ## Summary :
 * **first** : we post the zip code by funcion of post function in app.js amd make another post function in the server.js and also make another get function in server.js by /all to hold the returned data
 * **second** : we post again the returned data but only temprature only in the /addCountry
