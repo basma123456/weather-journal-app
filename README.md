@@ -10,10 +10,10 @@ the app then will posted that request and gets the data that is required which i
 
 **Functions:**
 
-  * ###getInfo : is a function which has concept of asyenc method which enabling to use await method
+  * ###getInfo 3 : is a function which has concept of asyenc method which enabling to use await method
   that me function has three parameters which is url , zip code , and my api that i obtained from the openWeatherMap api
   ---------------
-  * ###postData : 
+  * ###postData 3 : 
       >  the function of post request which has 2 parameters
       >  the first is the url of the distination that we want to post in it
       >  the second parameter is the object that contains the data that we want to post it
